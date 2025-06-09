@@ -2,7 +2,8 @@
 
 Este proyecto es una aplicación fullstack compuesta por un backend en .NET 8, una base de datos SQLite y un frontend desarrollado con Vue.js.  
 El proyecto está disponible con un cliente desplegado en [asimov-front.asociate.cl/](https://asimov-front.asociate.cl/) y el backend en [asimov-back.asociate.cl/](https://asimov-back.asociate.cl/).  
-![UI](https://github.com/VladimirVarelaH/asimov-prueba/blob/main/docu/image.jpg?raw=true)
+![UI](https://github.com/VladimirVarelaH/asimov-prueba/blob/main/docu/image.png)
+
 
 
 ## Tecnologías
