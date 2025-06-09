@@ -1,6 +1,9 @@
 # Proyecto Asimov - Prueba Técnica
 
-Este proyecto es una aplicación fullstack compuesta por un backend en .NET 8, una base de datos SQLite y un frontend desarrollado con Vue.js.
+Este proyecto es una aplicación fullstack compuesta por un backend en .NET 8, una base de datos SQLite y un frontend desarrollado con Vue.js.  
+El proyecto está disponible con un cliente desplegado en [asimov-front.asociate.cl/](https://asimov-front.asociate.cl/) y el backend en [asimov-back.asociate.cl/](https://asimov-back.asociate.cl/).  
+![UI](https://github.com/VladimirVarelaH/asimov-prueba/blob/main/docu/image.jpg?raw=true)
+
 
 ## Tecnologías
 
@@ -35,6 +38,9 @@ Este proyecto es una aplicación fullstack compuesta por un backend en .NET 8, u
     ```
 
 Esto iniciará tanto el backend como el frontend y la base de datos en contenedores separados.
+
+### Ejecución si Docker
+Si se quiere ejecutar sin utilizar Docker es importante ejecutar las migraciones con el comando `dotnet ef database update` y después levantar el servicio con `dotnet run`
 
 ## Uso
 - El backend estará disponible en `http://localhost:5000` (o el puerto configurado).

@@ -6,6 +6,7 @@ prueba-front/.vite/
 # .NET
 prueba/bin/
 prueba/obj/
+prueba/appointments.db
 
 # Docker
 **/.vscode/
