@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./prueba
+      dockerfile: Dockerfile
+    container_name: prueba-backend
+    ports:
+      - "5077:8080"
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+      start_period: 60s
+
+
+
+  frontend:
+    build:
+      context: ./prueba-front
+      dockerfile: Dockerfile
+    container_name: prueba-frontend
+    ports:
+      - "5173:5173"
+    networks:
+      - app-network
+    command: npm run dev -- --host
+    depends_on:
+      # backend:
+      #   condition: service_healthy
+      backend
+
+networks:
+  app-network:
+    driver: bridge
